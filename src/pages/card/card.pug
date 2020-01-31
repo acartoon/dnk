@@ -1,0 +1,23 @@
+extends ../template.pug
+include ../../blocks/card/card.pug
+include ../../blocks/c-card/c-card.pug
+
+block content
+  .box.hurdle
+    .container
+      +card('Комбез DNK с нашивкой горчица woman', 'KFT.018.NY.001.07', '1700', '2500', 'woman')
+  .box.hurdle
+    .container
+      .card__subtitle Идеи для лука
+      include ../../blocks/card/card-look.pug
+  .box.hurdle
+    .container
+      .card__subtitle Вам также может понравиться
+      include ../../blocks/product-offers/product-offers.pug
+  .box.hurdle
+    .container
+      .card__subtitle С этим товаром покупают
+      include ../../blocks/product-offers/product-offers.pug
+  .box.hurdle
+    .container
+      include ../client-help.pug

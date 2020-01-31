@@ -1,0 +1,19 @@
+.shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.shipping__title {
+  margin-bottom: 3px;
+  line-height: 18px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.shipping__info {
+  margin: 0;
+  font-size: 14px;
+  display: inline-block;
+
+}

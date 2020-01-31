@@ -1,0 +1,14 @@
+-
+  var menu = [
+    {title: 'история заказов', link: 'orders.html'},
+    {title: 'личные данные', link: 'personal.html'},
+    {title: 'клуб привилегий', link: 'club.html'},
+  ]
+
+.mobile-wrapper.d-none.second-level
+  .mobile-wrapper__inner
+    ul.user-nav__list
+      each val in menu
+        li.user-nav__item
+          a(href=val.link).user-nav__link=val.title
+

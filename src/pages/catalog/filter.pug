@@ -1,0 +1,35 @@
+include ../../blocks/accordion/accordion.pug
+- var price = ['менее 1000', '1000 - 1499', '1500 - 1999', '2000 - 2499', '2500 - 2999', '3000 - 3499', '3500 и выше'];
+- var age = ['Дети', 'Подростки', 'Мужчины', 'Женщины'];
+- var size = ['62', '74', '86', '98', '110', '122', '134', '158', 'S', 'Woman S'];
+
+ul.filter-list.mb-3
+  li.filter-list__item.filter-list-js
+    +accordion('Стоимость')
+      ul.filter-list.filter-list--lvl-2
+        each val, i in price
+          li.filter-list__item
+            input(type='checkbox', id=i+'-price').filter-list__input
+            label(for=i+'-price').filter-list__label=val
+      //- input(type='reset' value="очистить")
+      p.filter-list__reset
+        span Сбросить
+  li.filter-list__item.filter-list-js
+    +accordion('Возраст')
+      ul.filter-list.filter-list--lvl-2
+        each val, i in age
+          li.filter-list__item
+            input(type='checkbox', id=i+'-age').filter-list__input
+            label(for=i+'-age').filter-list__label=val
+      p.filter-list__reset
+        span Сбросить
+  li.filter-list__item.filter-list-js
+    +accordion('Размер')
+      .accordion__body
+        ul.filter-list.filter-list--lvl-2
+          each val, i in size
+            li.filter-list__item
+              input(type='checkbox', id=i).filter-list__input
+              label(for=i).filter-list__label=val
+        p.filter-list__reset
+          span Сбросить

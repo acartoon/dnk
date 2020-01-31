@@ -1,0 +1,84 @@
+extends template.pug
+include ../blocks/alert/alert.pug
+include ../blocks/basket-list/basket-list.pug
+include ../blocks/alert/alert.pug
+include ../blocks/shipping/shipping.pug
+include ../blocks/modal/modal.pug
+include ../blocks/lists/simple-list/simple-list.pug
+
+block content
+  .payment.container
+    .row
+      .col-12.col-md-8
+        h1.heading оформление заказа
+        .box.mb-40
+          +alert('неоплаченные заказы отменяются в течении 15 минут', false, true)
+        h2.title Доставка
+        .box.mb-40
+          //- адрес доставки (при необходимости)
+          h3.subtitle Данные получателя
+          include payment-form.pug
+        .box.mb-20
+          h3.subtitle Способ получения заказа
+          .box.box--border
+            +shipping(250, 2, 'почта россии', 'описание описание описание описание')
+            //- p.button.button--white изменить службу доставки
+        .box.mb-40.button-group
+          button(data-payment='changeDelivery').button.button--white Изменить службу доставки
+          button.button Выбрать пункт выдачи
+        +modal('Выберете службу доставки', true)
+          form(id=`deliveryForm`).d-none
+            ul.check-list.delivery__modal
+              li.check-list__item
+                input(id='name4' type='radio' name='delivery' value='russianPost').check-input
+                label(for='name4').check-label
+                  +shipping(250, 2, 'почта россии', 'описание описание описание описание')
+              li.check-list__item
+                input(id='name3' type='radio'  name='delivery' value='sdek').check-input
+                label(for='name3').check-label
+                  +shipping(250, 2, 'сдэк', 'описание описание описание описание')
+              li.check-list__item
+                input(id='name2' type='radio'  name='delivery' value='box').check-input
+                label(for='name2').check-label
+                  +shipping(250, 2, 'боксберри', 'описание описание описание описание')
+              li.check-list__item
+                input(id='name1' type='radio'  name='delivery' value='dhl').check-input
+                label(for='name1').check-label
+                  +shipping(250, 2, 'dhl', 'описание описание описание описание')
+            button(data-payment='takeDelivery').button.button--delivery.js-apply-modal Применить
+
+          form(id=`paymentForm`).d-none
+            ul.check-list.delivery__modal
+              li.check-list__item
+                input(id='pay1' type='radio' name='payment' value='card').check-input
+                label(for='pay1').check-label Банковская карта
+              li.check-list__item
+                input(id='pay2' type='radio' name='payment' value='pay').check-input
+                label(for='pay2').check-label PayPall
+              li.check-list__item
+                input(id='pay3' type='radio' name='payment' value='apple').check-input
+                label(for='pay3').check-label ApplePay
+              li.check-list__item
+                input(id='pay4' type='radio' name='payment' value='sber').check-input
+                label(for='pay4').check-label Сбербанк онлайн
+            button(data-payment='takePaymetn').button.button--payment.js-apply-modal Применить
+        .box.mb-40
+          //- стоимость итого
+          ul.total-list
+            li
+              b.total__name сумма к оплате
+              span.total__count 1 500 ₽
+            li
+              b.total__name доставка
+              span.total__count 1 500 ₽
+            li
+              b.total__name скидка
+              span.total__count 1 500 ₽
+            li.total
+              b.total__name итого
+              span.total__count 1 500 ₽
+        .box.button-group
+          button(data-payment='changePayment').button.button--white.button--payment
+            span Банковская карта
+            span.span-color Изменить способ оплаты
+          button.button Оформить заказ

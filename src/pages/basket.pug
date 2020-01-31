@@ -1,0 +1,59 @@
+extends template.pug
+include ../blocks/alert/alert.pug
+include ../blocks/basket-list/basket-list.pug
+
+include ../blocks/lists/simple-list/simple-list.pug
+
+block content
+  .basket-page__main.hurdle
+    .container
+      .row
+        .col-12
+          h1.header Корзина
+          .box
+            +alert('неоплаченные товары отменяются в течении 15 минут', false, true)
+        .col-12.mb-3
+          .box
+            +basket-list
+        .col-12
+          .basket__bottom.mb-3
+            .row
+              .col-12.col-md-4
+                .basket__coupon.mb-4
+                  form(action="")
+                    input(placeholder='Ввести подарочный сертификат').input
+              .block.col-12.order-md-5
+                +alert('До бесплатной доставки по Росcии осталось 5 240 ₽')
+              .col-12.col-md-8
+                .basket__total-block
+                  //- .row
+                  //-   .col-6.ml-auto.col-md-6
+                  //-     p.basket__total-text Товаров на сумму:
+                  //-   .col-6.col-md-6
+                  //-     p.basket__total-amount
+                  //-       span.basket__total-amount 3 400 ₽
+                  //- .row
+                  //-   .col-6.ml-auto.col-md-6
+                  //-     p.basket__total-text Скидка:
+                  //-   .col-6.col-md-6
+                  //-     p.basket__total-amount
+                  //-       span.basket__total-amount 1 200 ₽
+                  .row
+                    .col-6.ml-auto.col-md-6
+                      p.basket__total-text Итого:
+                    .col-6.col-md-6
+                      p.basket__total-amount
+                        //- span.basket__total-amount 2 400 ₽
+                        span.basket__total-amount.basket__total-amount--sale 3400 ₽/
+                        span.basket__total-amount.basket__total-amount--old 3400 ₽
+            //- .block.mb-4
+            //-   +alert('Бесплатная доставка по России от 7 000, заграница от 15 000 при выборе Почты России и пунктов самовывоза. ')
+        .col-12
+          .box.basket__button
+            a(href='payment.html').button.ml-auto Оформить заказ
+  .basket-page__footer
+    .container
+      include client-help.pug
+
+
+

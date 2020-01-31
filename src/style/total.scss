@@ -1,0 +1,32 @@
+.total__count {
+  margin-left: auto;
+  display: inline-block;
+}
+
+.total__name {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.total-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  
+  & li {
+    display: flex;
+    margin-bottom: 5px;
+
+    &.total {
+      font-weight: 700;
+      border-top: 1px solid #CCC;
+      padding-top: 10px;
+    }
+  }
+
+
+}

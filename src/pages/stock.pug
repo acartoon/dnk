@@ -1,0 +1,31 @@
+extends template.pug
+
+block content
+  .personal-page
+    .container
+      .row
+        .col-3.d-none.d-md-block
+          include user-left-menu.pug
+        .col-12.col-md-9
+          h2.personal-page__title.title Наши акции
+          .row
+            .col-12.col-md-6.mb-4
+              .mb-2
+                img(src='http://placehold.it/500x250')
+              h3.subtitle Акция 2=1
+              p.para Приобретая шапку "Свет", Вы можете выбрать вторую шапку в подарок
+            .col-12.col-md-6.mb-4
+              .mb-2
+                img(src='http://placehold.it/500x250')
+              h3.subtitle Бесплатная доставка по России
+              p.para При заказе от 7 000 рублей бесплатная доставка (при выборе пунктов самовывоза и Почты России) по России
+            .col-12.col-md-6.mb-4
+              .mb-2
+                img(src='http://placehold.it/500x250')
+              h3.subtitle Бесплатная доставка по Миру
+              p.para При заказе от 15 000 рублей бесплатная доставка
+            .col-12.col-md-6.mb-4
+              .mb-2
+                img(src='http://placehold.it/500x250')
+              h3.subtitle Подарочные сертификаты
+              p.para На нашем сайте Вы можете приобрести подарочные сертификаты для себя или своих близких

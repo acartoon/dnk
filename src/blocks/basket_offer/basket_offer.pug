@@ -1,0 +1,17 @@
+include ../offer-btn/offer-btn.pug
+
+mixin basket_offer(name, count, price, discount, img)
+  .basket-offer.row
+    .basket-offer__puctire.col-3.col-md-1
+      img(src=img)
+    .basket-offer__info.col-9.col-md-11
+      .row
+        p.basket-offer__name.col-md-6=name
+        p.basket-offer__size.col-md-3 one size woman
+        p.basket-offer__price-wrapper.col-md-3
+          span.basket-offer__price=price + ' ₽'
+          span.basket-offer__price.basket-offer__price--old=price + ' ₽'
+          span.basket-offer__discount=discount + '%'
+        .col-12
+          .basket-offer__count
+            include ../counter/counter.pug

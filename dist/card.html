@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>title</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1"><link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+  <link href="./style/style.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="container">
+          <div class="mobile-wrapper d-none second-level">
+            <div class="mobile-wrapper__inner">
+              <ul class="user-nav__list">
+                <li class="user-nav__item"><a class="user-nav__link" href="orders.html">история заказов</a></li>
+                <li class="user-nav__item"><a class="user-nav__link" href="personal.html">личные данные</a></li>
+                <li class="user-nav__item"><a class="user-nav__link" href="club.html">клуб привилегий</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-nav__container">
+            <div class="row">
+              <button class="main-nav__btn d-lg-none second-level" title="Меню" type="button"><span></span></button>
+              <div class="col-md-4 align-self-center">
+                <div class="header__top d-none d-md-block top">
+                  <nav class="top-nav">
+                    <ul class="top-nav-list">
+                      <li class="top-nav-list__item"><a class="top-nav-list__link" href="delivery.html">Доставка</a></li>
+                      <li class="top-nav-list__item"><a class="top-nav-list__link" href="shops.html">Наши магазины</a></li>
+                      <li class="top-nav-list__item"><a class="top-nav-list__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-4 col-md-4"><a class="main-nav__logo" href="/"><img src="/img/logo.svg"></a></div>
+              <div class="col-8 col-md-4 align-self-center">
+                <ul class="user-nav">
+                  <li class="user-nav__item">
+                    <div class="main-nav__icon main-nav__icon--user"></div><a class="main-nav__link main-nav__link--personal" href="personal.html">Личный кабинет</a>
+                  </li>
+                  <li class="user-nav__item">
+                    <div class="main-nav__icon main-nav__icon--search"></div>
+                  </li>
+                  <li class="user-nav__item"><a class="main-nav__icon main-nav__icon--basket" href="basket.html"><span class="main-nav__count">2</span></a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="main-nav__wrapper">
+                  <div class="main-nav__header">
+                    <div class="close close--white js-close"></div>
+                  </div>
+                  <div class="main-nav__inner">
+                    <ul class="main-nav__list">
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">New</a>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Дети</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Верхняя одежда</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Комбезы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Свитшоты/толстовки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Кофты/футбы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Костюмы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Штаны</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Слипы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Платья/юбки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Нижнее белье</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Носки</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Подростки</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Верхняя одежда</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Комбезы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Свитшоты/толстовки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Кофты/футбы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Костюмы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Штаны</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Слипы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Платья/юбки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Нижнее белье</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Носки</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Женщины</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Верхняя одежда</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Комбезы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Свитшоты/толстовки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Кофты/футбы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Костюмы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Штаны</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Слипы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Платья/юбки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Нижнее белье</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Носки</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Мужчины</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Верхняя одежда</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Комбезы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Свитшоты/толстовки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Кофты/футбы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Костюмы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Штаны</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Слипы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Нижнее белье</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Носки</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Аксессуары</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Шапки/Варежки/Шарфы</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Украшения</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Сумки/рюкзаки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Носки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Другое</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">Коллекции</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">DNK BASE</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">DNK ORIGINAL</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">DNK SKULL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="main-nav__item"><a class="main-nav__link js-main-nav" href="">sale</a>
+                        <div class="main-nav__wrapper-lvl2 first-level">
+                          <div class="main-nav__wrapper-top">
+                            <button class="main-nav__back d-lg-none js-back">назад</button>
+                            <hr class="main-nav__divider d-lg-none">
+                          </div>
+                          <div class="main-nav__wrapper-body">
+                            <ul class="main-nav__list main-nav__list--lvl2">
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Дети</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Подростки</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Женщины</a></li>
+                              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Мужчины</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <hr class="main-nav__divider d-lg-none">
+                    <ul class="main-nav__list d-md-none">
+                      <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка</a></li>
+                      <li class="main-nav__item"><a class="main-nav__link" href="shops.html">Наши магазины</a></li>
+                      <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="info">
+        <div class="container">
+          <p class="text">Скидки на все до 50%!!!!</p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="box hurdle">
+        <div class="container">
+          <div class="card row">
+            <div class="col-12 mb-5">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div class="row">
+                    <div class="col-12 col-md-9 ml-auto">
+                      <div class="owl-carousel owl-carousel-img">
+                        <div><img src="/img/123.jpg"/></div>
+                        <div><img src="/img/123.jpg"/></div>
+                        <div><img src="/img/123.jpg"/></div>
+                        <div><img src="/img/123.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div class="card__info">
+                    <h2 class="card__title">Комбез DNK с нашивкой горчица woman</h2>
+                    <h4 class="card__subtitile">KFT.018.NY.001.07</h4>
+                    <h3 class="card__price-wrapper"><span class="card__price">1700 ₽</span><span class="card__price card__price--old">2500 ₽</span></h3>
+                  </div>
+                  <div class="card__table-size"><span>Таблица размеров</span></div>
+                  <div class="card__offers">
+                    <ul class="offer-btn">
+                      <li class="offer-btn__item"><span>Woman XS</span></li>
+                      <li class="offer-btn__item"><span>Woman S-M</span></li>
+                      <li class="offer-btn__item"><span>Woman L-XL</span></li>
+                    </ul>
+                    <div class="window-alert d-none">
+                      <p class="window-alert__text">Выберете размер!</p>
+                    </div>
+                  </div>
+                  <div class="card__counter">
+                    <p>количество</p>
+                    <div class="counter">
+                      <div class="counter__item counter__item--btn js-counter-min"><span class="counter__icon counter__icon--plus"></span></div>
+                      <input class="counter__item counter__item--count" type="number" value="1"/>
+                      <div class="counter__item counter__item--btn js-counter-max"><span class="counter__icon counter__icon--minus"></span></div>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <div class="button">В корзину</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card__subtitle">Описание и характеристики</div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-2">
+                              <div class="accordion accordion--open accordion--mob">
+                                <div class="accordion__head">
+                                  <h3 class="subtitle">Общие параметры</h3>
+                                </div>
+                                <div class="accordion__body">
+                                  <ul class="parameter-list">
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Состав: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Ткань: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Цвет: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                              <div class="accordion accordion--open accordion--mob">
+                                <div class="accordion__head">
+                                  <h3 class="subtitle">Параметры размера</h3>
+                                </div>
+                                <div class="accordion__body">
+                                  <ul class="parameter-list">
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Состав: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Ткань: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                    <li class="parameter-list__item">
+                                              <dl class="parameter2">
+                                                <dt class="parameter__term"><span>Цвет: </span></dt>
+                                                <dd class="parameter__descriptions">Описание параметра</dd>
+                                              </dl>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="text">
+                    Водонепроницаемые и непродуваемые зимние штаны с ультралегким утеплителем и фигурной отстрочкой. Теперь вы готовы к долгим зимним прогулкам. Функциональности и удобства добавляют фирменные резинки DNK.
+                    Представлены в 2 цветах.
+                    Внутри - ультралегкий утеплитель премиум-класса Shelter*, ECO-аналог пуха, превосходящий основную массу современных утеплителей. Удерживает тепло до -25 градусов, благодаря уникальной системе теплообмена, легко стирается и быстро сохнет! 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box hurdle">
+        <div class="container">
+          <div class="card__subtitle">Идеи для лука</div>
+          <div class="look">
+            <div class="look__preview row">
+              <div class="col-12 col-md-9 ml-auto mr-auto">
+                <div class="row">
+                  <div class="owl-carousel owl-carousel-look">
+                    <div>
+                      <div class="col-12"><img src="/img/look.jpg"></div>
+                    </div>
+                    <div>
+                      <div class="col-12"><img src="/img/look_2.jpg">
+                        <div class="block d-none d-md-block look__triangle">
+                          <div class="triangle"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="col-12"><img src="/img/look_3.jpg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block d-md-none">
+              <div class="triangle"></div>
+            </div>
+            <div class="row">
+              <div class="owl-carousel owl-carousel-look__product">
+                <div class="col-12"><a class="c-card" href="card.html">
+                    <div class="c-card__pucture">
+                      <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                      <div class="c-card__pucture-second"><img src="/img/с резинками.jpg" alt="Платье с объемным рукавом серое"/></div>
+                    </div>
+                    <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                    <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+                </div>
+                <div class="col-12"><a class="c-card" href="card.html">
+                    <div class="c-card__pucture">
+                      <div class="c-card__pucture-first"><img src="/img/юбка.jpg" alt="Фатиновая юбка черная"/></div>
+                      <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Фатиновая юбка черная"/></div>
+                    </div>
+                    <h3 class="c-card__title">Фатиновая юбка черная</h3>
+                    <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+                </div>
+                <div class="col-12"><a class="c-card" href="card.html">
+                    <div class="c-card__pucture">
+                      <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                      <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                    </div>
+                    <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                    <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+                </div>
+                <div class="col-12"><a class="c-card" href="card.html">
+                    <div class="c-card__pucture">
+                      <div class="c-card__pucture-first"><img src="/img/с резинками.jpg" alt="Платье с резинками нюд"/></div>
+                      <div class="c-card__pucture-second"><img src="/img/юбка.jpg" alt="Платье с резинками нюд"/></div>
+                    </div>
+                    <h3 class="c-card__title">Платье с резинками нюд</h3>
+                    <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+                </div>
+                <div class="col-12"><a class="c-card" href="card.html">
+                    <div class="c-card__pucture">
+                      <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                      <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                    </div>
+                    <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                    <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box hurdle">
+        <div class="container">
+          <div class="card__subtitle">Вам также может понравиться</div>
+          <div class="row justify-content-between">
+            <div class="col-6 col-lg-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/с резинками.jpg" alt="Платье с объемным рукавом серое"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/с резинками.jpg" alt="Платье с резинками нюд"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/юбка.jpg" alt="Платье с резинками нюд"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с резинками нюд</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p>
+                <div class="c-card__sticker"><span>new</span></div></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/юбка.jpg" alt="Фатиновая юбка черная"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Фатиновая юбка черная"/></div>
+                </div>
+                <h3 class="c-card__title">Фатиновая юбка черная</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box hurdle">
+        <div class="container">
+          <div class="card__subtitle">С этим товаром покупают</div>
+          <div class="row justify-content-between">
+            <div class="col-6 col-lg-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/с резинками.jpg" alt="Платье с объемным рукавом серое"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/с резинками.jpg" alt="Платье с резинками нюд"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/юбка.jpg" alt="Платье с резинками нюд"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с резинками нюд</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p>
+                <div class="c-card__sticker"><span>new</span></div></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/юбка.jpg" alt="Фатиновая юбка черная"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Фатиновая юбка черная"/></div>
+                </div>
+                <h3 class="c-card__title">Фатиновая юбка черная</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+            <div class="col-6 col-md-2"><a class="c-card" href="card.html">
+                <div class="c-card__pucture">
+                  <div class="c-card__pucture-first"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                  <div class="c-card__pucture-second"><img src="/img/платье.jpg" alt="Платье с объемным рукавом серое"/></div>
+                </div>
+                <h3 class="c-card__title">Платье с объемным рукавом серое</h3>
+                <p class="c-card__price-wrapper"><span class="c-card__price">2300 ₽</span><span class="c-card__price c-card__price--old">2300 ₽</span></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box hurdle">
+        <div class="container">
+          <div class="wrapper">
+            <div class="row">
+              <div class="box col-12 col-lg-4 text-center hurdle hurdle--transform">
+                <h3 class="title mb-3">Доставка</h3>
+                <p class="text">Самовывоз - Ростов-на-Дону</p>
+                <p class="text">Доставка по России от 200 ₽. Ближнее и дальнее зарубежье 1000 ₽ - 1500 ₽.</p>
+                <p class="text">Срок передачи заказов в транспортную компанию от 3 (отправка по новым коллекциям увеличивается до 7-ми) рабочих дней</p><a class="link">подробнее</a>
+              </div>
+              <div class="box col-12 col-lg-4 text-center hurdle hurdle--transform">
+                <h2 class="title mb-3">Возврат</h2>
+                <p class="text">Возврат товара осуществляется в течении 7 (семи) календарных дней после получения заказа.</p>
+                <p class="text">Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид (вещь не была в носке) и потребительские свойства, а также не сорваны бирки и этикетки.</p><a class="link">подробнее</a>
+              </div>
+              <div class="box col-12 col-lg-4 text-center hurdle hurdle--transform">
+                <h2 class="title mb-3">Помощь</h2>
+                <p class="text">Вы можете связаться с нами по телефону, электронной почте или другим удобным для Вас способом</p>
+                <div class="button-group d-md-none"><a class="button">позвонить</a><a class="button button--white">написать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer__top">
+          <nav class="footer-nav">
+            <ul class="footer-list row">
+              <li class="footer-list__item col-12 col-md-3">
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="tel:+79185580518">+7 (918) 558-05-18</a><a class="footer-menu__link" href="mailto:klient@dnk-russia.com">klient@dnk-russia.com</a><a class="footer-menu__link" href="mailto:support@dnk-russia.com">support@dnk-russia.com</a></li>
+                </ul>
+              </li>
+              <li class="footer-list__item col-12 col-md-3">
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="about.html">О компании</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="shops.html">Наши магазины</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="collaboration.html">Сотрудничество</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+              </li>
+              <li class="footer-list__item col-12 col-md-3">
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="policy.html">Политика конфиденциальности</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="stock.html">Акции</a></li>
+                </ul>
+              </li>
+              <li class="footer-list__item col-12 col-md-3">
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="payment-info.html">Оплата</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="delivery.html">Доставка</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="return.html">Возврат</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="certificates.html">Сертификаты</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-footer__bottom">
+          <p class="main-footer__copyright">© Одежда нового формата без возрастных ограничений 0+                      </p>
+        </div>
+      </div>
+    </footer>
+  <script src="app.js"></script><script src="main.js"></script></body>
+</html>

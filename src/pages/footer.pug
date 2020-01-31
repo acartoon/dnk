@@ -1,0 +1,62 @@
+-
+  var company = [
+    {title: "О компании", link: "about.html"},
+    {title: "Наши магазины", link: "shops.html"},
+    {title: "Сотрудничество", link: "collaboration.html"},
+    {title: "Контакты", link: "contacts.html"}
+  ];
+
+-
+  var about = [
+    {title: "Политика конфиденциальности", link: "policy.html"},
+    {title: "Акции", link: "stock.html"}
+    //- {title: "Опрос", link: ""}
+  ];
+
+-
+  var clients = [
+    //- {title: "Размерная сетка", link: ""},
+    {title: "Оплата", link: "payment-info.html"},
+    {title: "Доставка", link: "delivery.html"},
+    {title: "Возврат", link: "return.html"},
+    {title: "Сертификаты", link: "certificates.html"}
+  ];
+
+-
+  var menu = [
+    {menu: company},
+    {menu: about},
+    {menu: clients}
+  ]
+
+footer.main-footer
+  .container
+    .main-footer__top
+      nav.footer-nav
+        ul.footer-list.row
+          li.footer-list__item.col-12.col-md-3
+            //- ul.footer-social.mb-4
+            //-   li.footer-social__item
+            //-     a(href="").footer-social__link
+            //-   li.footer-social__item
+            //-     a(href="").footer-social__link
+            //-   li.footer-social__item
+            //-     a(href="").footer-social__link
+            //-   li.footer-social__item
+            //-     a(href="").footer-social__link
+            //-   li.footer-social__item
+            //-     a(href="").footer-social__link
+            ul.footer-menu
+              li.footer-menu__item
+                a(href="tel:+79185580518").footer-menu__link +7 (918) 558-05-18
+                a(href="mailto:klient@dnk-russia.com").footer-menu__link klient@dnk-russia.com
+                a(href="mailto:support@dnk-russia.com").footer-menu__link support@dnk-russia.com
+          each val in menu
+            li.footer-list__item.col-12.col-md-3
+              ul.footer-menu
+                each item in val.menu
+                  li.footer-menu__item
+                    a(href=item.link).footer-menu__link=item.title
+    .main-footer__bottom
+      p.main-footer__copyright © Одежда нового формата без возрастных ограничений 0+                      
+            

@@ -1,0 +1,28 @@
+nav.main-nav
+  .container
+    include ../user-nav/user-nav-dropdown.pug
+    .main-nav__container
+      .row
+        button(title="Меню", type="button").main-nav__btn.d-lg-none.second-level
+          span
+        .col-md-4.align-self-center
+          include header-top.pug
+        .col-4.col-md-4
+          include logo.pug
+        .col-8.col-md-4.align-self-center
+          include ../user-nav/user-nav.pug
+        .col-md-12
+          .main-nav__wrapper
+            .main-nav__header
+              .close.close--white.js-close
+            .main-nav__inner
+              include ../main-nav/main-nav.pug
+              hr.main-nav__divider.d-lg-none
+              include ../header/nav-top.pug
+        //- .col-md-12
+        //-   .main-nav__wrapper
+        //-     .main-nav__header
+        //-       .close.close--white
+        //-     include ../main-nav/main-nav.pug
+        //-     hr.main-nav__divider.d-lg-none
+        //-     include ../header/nav-top.pug

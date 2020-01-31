@@ -1,0 +1,13 @@
+.arrow {
+  position: relative;
+
+  &:before {
+    $size: 12px;
+    content: '';
+    width: $size;
+    height: $size;
+    background-image: url(img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,14 @@
+extends template.pug
+
+include ../blocks/important/important.pug
+
+block content
+  .page
+    .page__main
+      .container
+        .row
+          .col-3.d-none.d-md-block
+            include main-left-menu.pug
+          .col-12.col-md-9
+            .block.mb-4
+              h1.title Сотрудничество

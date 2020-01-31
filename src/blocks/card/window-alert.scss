@@ -1,0 +1,27 @@
+.window-alert {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -63px;
+  background: #3b444b;
+  color: white;
+  padding: 10px 6px;
+  border-radius: 3px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 56px;
+    bottom: -5px;
+    background: #3b444b;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -5;
+  }
+}
+
+.window-alert__text {
+  margin: 0;
+}

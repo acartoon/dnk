@@ -1,0 +1,64 @@
+.c-card {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: block;
+
+  &:hover {
+    .c-card__pucture-first {
+      opacity: 0;
+    }
+
+    .c-card__pucture-second {
+      opacity: 1;
+    }
+  }
+}
+
+.c-card__pucture-second {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  opacity: 0;
+}
+
+.c-card__pucture {
+  padding: 0 10px;
+  position: relative;
+}
+
+.c-card__sticker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  background: black;
+  color: white;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c-card__title {
+  margin: 0;
+  // text-transform: uppercase;
+  font-weight: 400;
+  font-weight: 300;
+  text-align: center;
+}
+
+.c-card__price-wrapper {
+  margin: 0;
+}
+
+.c-card__price {
+  margin-right: 5px;
+  font-size: 16px;
+
+  &--old {
+    font-size: .9em;
+    text-decoration: line-through;
+    opacity: 0.8;
+  }
+}

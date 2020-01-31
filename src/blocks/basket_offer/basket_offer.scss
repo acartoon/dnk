@@ -1,0 +1,101 @@
+.basket-offer {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  
+  @media(min-width: 992px) {
+    margin-left: -15px;
+    margin-right: -15px;
+
+  }
+}
+
+.basket-offer__puctire {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media(min-width: 992px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.basket-offer__info {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media(min-width: 992px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.basket-offer__delete {
+  // text-align: right;
+  color: #56595c;
+  margin: 0;
+  margin-top: 12px;
+  letter-spacing: 0.5px;
+  // position: absolute;
+  // right: 0;
+}
+
+.basket-offer__price-wrapper {
+  margin: 0;
+}
+
+.basket-offer__price {
+  // font-size: 14px;
+  font-size: 18px;
+  // font-weight: 700;
+  letter-spacing: 0.5px;
+
+  &--sale {
+    font-size: 17px;
+    color: #ba0000;
+    line-height: 16px
+  }
+
+  &--old {
+    margin-left: 5px;
+    position: relative;
+    font-size: 13px;
+    text-decoration: line-through;
+    // &:before {
+    //   position: absolute;
+    //   content: '';
+    //   width: 100%;
+    //   height: 1px;
+    //   background: #3b444b;
+    //   bottom: 8px;
+    //   left: 0;
+    // }
+  }
+}
+
+.basket-offer__count {
+  text-align: right;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.basket-offer__name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  // text-transform: lowercase;
+  // color: grey;
+}
+
+.basket-offer__count {
+  width: 90px;
+}
+
+.basket-offer__price-wrapper {
+  margin-bottom: 10px;
+}
+
+.basket-offer__size {
+  margin: 0;
+  margin-bottom: 3px;
+}

@@ -1,0 +1,29 @@
+extends template.pug
+
+block content
+
+  -
+    var data = [
+      {label: 'Электронная почта', placeholder: 'e-mail', type: 'email'},
+      {label: 'Пароль', placeholder: 'password', type: 'password'},
+      {label: 'Повторите пароль', placeholder: 'password', type: 'password'},
+      {label: 'Имя и фамилия', placeholder: 'Имя и фамилия', type: 'text'},
+      {label: 'Номер телефона', placeholder: 'Номер телефона', type: 'tel'}
+    ];
+
+  .main-page
+    .container.mb-5
+      h1.title 
+      .border-block
+        h3.subtitle.text-center Регистрация
+        .block.mb-4
+          form.form(action="")
+            each val, index in data
+              p.form__input-group
+                label(for=index).form__label=val.label
+                input(id=index, placeholder=val.label, type=val.type).form__input
+            a(href='personal.html').button Зарегистрироваться
+        .block.mb-3
+          hr.hr
+          h3.subtitle.text-center Или через...
+          include social-reg.pug

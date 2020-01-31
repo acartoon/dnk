@@ -1,0 +1,13 @@
+.user-nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-nav {
+  margin-left: 20px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}

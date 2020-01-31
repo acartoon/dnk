@@ -1,0 +1,41 @@
+.check-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    border-bottom: 1px solid #CCC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.check-input {
+  display: none;
+}
+
+.check-label {
+  position: relative;
+  padding-left: 30px;
+  display: block;
+
+  &:before {
+    $size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    border: 1px solid #CCC;
+  }
+
+  .check-input:checked + & {
+    &:before {
+      box-shadow: inset 0px 0px 0px 5px #fff;
+      background-color: #CCC;
+    }
+  }
+}

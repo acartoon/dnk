@@ -1,0 +1,9 @@
+mixin modal(title, mob = false)
+  div(class=mob? "modal modal--mob": "modal")
+    .modal__close
+      .close(data-close='modal')
+        //- button.close
+    .modal__head
+      h3=title
+    .modal__inner
+      block

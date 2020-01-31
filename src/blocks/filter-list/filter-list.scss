@@ -1,0 +1,99 @@
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--lvl-2 {
+    // max-height: 200px;
+    // overflow: auto;
+  }
+}
+
+.filter-list__item {
+
+  @media(min-width: 992px) {
+    margin-bottom: 20px;
+  }
+}
+
+.filter-list__label {
+  position: relative;
+  padding-left: 35px;
+  $size: 18px;
+  // $color: #595959;
+  // $color: #494d4e;
+  $color: #3b444b;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block;
+    width: $size;
+    height: $size;
+    box-sizing: border-box;
+    border: 1px solid $color;
+    border-radius: 4px;
+  }
+
+  .filter-list__input:checked ~ & {
+    // &:before {
+    //   box-shadow: inset 0px 0px 1px 4px #fff;
+    //   border: 1px solid $color;
+    //   background: $color;
+    // }
+    // &:before {
+    //   box-shadow: inset 0px 0px 1px 4px #fff;
+    //   border: 1px solid $color;
+    //   background: $color;
+    // }
+    &:after {
+      transform: rotate(45deg);
+      position: absolute;
+      left: 3px;
+      top: 6px;
+      width: 4px;
+      height: 9px;
+      content: "";
+      box-sizing: content-box;
+      transform-origin: 0px 100%;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      animation: 125ms cubic-bezier(0.4, 0, 0.23, 1) 250ms 1 normal forwards running checkbox-check;
+      border-color: $color;
+    }
+  }
+}
+
+.filter-list__input {
+  display: none;
+}
+
+.filter-list__reset {
+  text-align: right;
+  font-size: .9em;
+  padding-top: 10px;
+  margin: 0;
+  span {
+    cursor: pointer;
+    border-bottom: 1px dotted;
+  }
+  
+  @media(min-width: 992px) {
+    text-align: left;
+
+  }
+}
+
+.show-filter {
+  overflow: hidden;
+}

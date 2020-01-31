@@ -1,0 +1,22 @@
+extends template.pug
+
+block content
+  include ../blocks/important/important.pug
+
+  .container
+    .row
+      .col-3.d-none.d-md-block
+        include user-left-menu.pug
+      .col-12.col-md-9.ml-auto
+        h1 Клуб привилегий
+        .image-block.mb-4
+          img(src='http://placehold.it/500x250')
+        .block.mb-5
+          h3.subtitle Здравствуйте, Анна Иванова!
+          .block.mb-4
+            +importantBlock(true)
+              p.para Для вступления в клуб привилений Вам необходимо совершить заказов общей суммой на  100 000 ₽ или совершить единоразовую
+                |  покупку на сумму 20 000 ₽
+          p.para.mb-4 Вступив в клуб привилегий Вам будет доступен ранний старт коллекций, и еще какой-нибудь привлекательный текст
+          a(href="catalog.html").button За покупками!
+          

@@ -1,0 +1,10 @@
+mixin parameter(term, descriptions)
+  dl.parameter
+    dt.parameter__term=term + ': '
+    dd.parameter__descriptions=descriptions
+
+mixin parameter_2(term, descriptions)
+  dl.parameter2
+    dt.parameter__term
+      span=term + ': '
+    dd.parameter__descriptions=descriptions

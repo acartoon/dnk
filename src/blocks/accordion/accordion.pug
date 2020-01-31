@@ -1,0 +1,6 @@
+mixin accordion(title, mob=false)
+  .accordion.accordion--open(class=mob? 'accordion--mob': '')
+    .accordion__head
+      h3.subtitle=title
+    .accordion__body
+      block

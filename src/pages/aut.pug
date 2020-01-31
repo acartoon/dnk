@@ -1,0 +1,24 @@
+extends template.pug
+
+block content
+  .main-page.mb-5
+    .container
+      .border-block
+        .block.mb-4
+          h3.subtitle.text-center Войти через электронную почту
+          form.form(action="").mb-4
+            p.form__input-group
+              label.form__label Электронная почта
+              input(placeholder='e-mail', type='email').form__input
+            p.form__input-group
+              label.form__label Пароль
+              input(placeholder='password', type='password').form__input
+        .block.mb-3
+          hr.hr
+          h3.subtitle.text-center Или через...
+          include social-reg.pug
+        .block.mb-3
+          hr.hr
+          h3.subtitle.text-center Или ...
+          .button-group
+            a(href="registration.html").button Регистрация

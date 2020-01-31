@@ -1,0 +1,13 @@
+mixin orderCard(link, title, price, size, count)
+  .order-card
+    .row
+      .col-3.pr-2
+        .order-card__img
+          img(src=link).order-card__img-link
+      .col-6.pl-2.pr-2
+        p.order-card__title=title
+        p.order-card__size=size
+        p.order-card__count=count + ' шт.'
+      .col-3.pl-2.text-right
+        p.order-card__price=price + ' ₽'
+        //- p.order-card__price=price + ' ₽ / ' + count + ' штук(а)'

@@ -1,0 +1,86 @@
+extends template.pug
+
+block content
+  include ../blocks/order-card/order-card.pug
+  include ../blocks/alert/alert.pug
+
+  -
+    var data = [
+      {title: 'имя получателя', param: 'Андрей Петров'},
+      {title: 'Контактный телефон', param: '+79188513833'},
+      {title: 'E-mail', param: '310304@list.ru'}
+    ];
+
+  -
+    var delivery = [
+      {title: 'Служба доставки', param: 'Почта России'},
+      {title: 'Адрес доставки', param: '344000, Ростов-на-Дону, ул. М.Горького, 151'},
+      {title: 'Номер отправления', param: '7689954214'},
+      {title: 'Дата отправки', param: '15.07.2019 г.'},
+    ];
+
+  -
+    var order = [
+      {title: 'Сумма заказа', param: '3 500 ₽'},
+      {title: 'Платежная система', param: 'банковская карта'},
+      {title: 'Оплачен', param: 'да'},
+    ];
+
+  
+  .page__main-content.hurdle
+    .container
+      .row
+        .col-3.d-none.d-md-block
+          include user-left-menu.pug
+        .col-12.col-md-9.ml-auto
+          //- span.order__label завершен
+          h4.order__status.mb-1
+            a(href='#end') завершен
+            a(href='#statuses').order__more Подробнее о статусах
+          h2.title.order__title заказ № 154 от 31.12.2019
+          .block.mb-3
+            +alert('Возникли вопросы? Позвоните, мы поможем! +7 918 851 38 33')
+          .block.mb-4
+            h2.title Получатель
+            ul.simple-list
+              each val in data
+                li.mb-3
+                  dl.order__dl
+                    dt.order__dt=val.title
+                    dd.order__dd=val.param
+          .block
+            h2.title Доставка
+            ul.simple-list
+              each val in delivery
+                li.mb-4
+                  dl.order__dl
+                    dt.order__dt=val.title
+                    dd.order__dd=val.param
+          .block.mb-4
+            h2.title Подробности заказ
+            ul.simple-list
+              each val in order
+                li.mb-4
+                  dl.order__dl
+                    dt.order__dt=val.title
+                    dd.order__dd=val.param
+            ul.simple-list
+              li
+                +orderCard('/img/123.jpg', 'Свитшот с резинками черный', '1 700', 'one size woman', '1')
+              li
+                +orderCard('/img/123.jpg', 'Свитшот с резинками черный', '1 700', 'one size woman', '1')
+              li
+                +orderCard('/img/123.jpg', 'Свитшот с резинками черный', '1 700', 'one size woman', '1')
+  .page__middle.hurdle#statuses
+    .container
+      .row
+        .col-12.col-9
+          include status-info.pug
+        //- h2.title
+        //-   span.order__status-note 
+        //-   | Информация по статусам заказов
+
+  .page__footer.container
+    .row
+      .block.col-12
+        include client-help.pug

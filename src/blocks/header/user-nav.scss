@@ -1,0 +1,17 @@
+
+.user-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

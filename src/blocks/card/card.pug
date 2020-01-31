@@ -1,0 +1,54 @@
+include ../offer-btn/offer-btn.pug
+
+mixin card(title, subtitile, price, price_old, sex)
+  .card.row
+    .col-12.mb-5
+      .row
+        .col-12.col-lg-5
+          .row
+            .col-12.col-md-9.ml-auto
+              .owl-carousel.owl-carousel-img
+                div
+                  img(src='/img/123.jpg')
+                div
+                  img(src='/img/123.jpg')
+                div
+                  img(src='/img/123.jpg')
+                div
+                  img(src='/img/123.jpg')
+        .col-12.col-lg-7
+          .card__info
+            h2.card__title=title
+            //- small 
+            h4.card__subtitile=subtitile
+            h3.card__price-wrapper
+              span.card__price=price + ' ₽'
+              span.card__price.card__price--old=price_old + ' ₽'
+          .card__table-size
+            span Таблица размеров
+          .card__offers
+            if(sex == 'man')
+              +offer_btn(['Man S170', 'Man M', 'Man L'])
+            if(sex == 'woman')
+              +offer_btn(['Woman XS', 'Woman S-M', 'Woman L-XL'])
+            if(sex == 'baby')
+              +offer_btn(['62 (0-6 мес)', '74 (6-12 мес)', '86 (1-2 года)', '98 (2-3 года)'])
+            if(sex == 'junior')
+              +offer_btn(['110', '122', '134', '146', '158'])
+            .window-alert.d-none
+              p.window-alert__text Выберете размер!
+          .card__counter
+            p количество
+            include ../counter/counter.pug
+          .card__button
+            .button В корзину
+    .col-12
+      .card__subtitle Описание и характеристики
+      .row
+        .col-12
+            include card-characteristics.pug
+        .col-12
+          p.text Водонепроницаемые и непродуваемые зимние штаны с ультралегким утеплителем и фигурной отстрочкой. Теперь вы готовы к долгим зимним прогулкам. 
+            | Функциональности и удобства добавляют фирменные резинки DNK.
+            | Представлены в 2 цветах.
+            | Внутри - ультралегкий утеплитель премиум-класса Shelter*, ECO-аналог пуха, превосходящий основную массу современных утеплителей. Удерживает тепло до -25 градусов, благодаря уникальной системе теплообмена, легко стирается и быстро сохнет! 

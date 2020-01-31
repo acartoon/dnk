@@ -1,0 +1,37 @@
+extends ../template.pug
+
+block content
+  include ../../blocks/modal/modal.pug
+  include ../../blocks/c-card/c-card.pug
+
+  .container
+    .catalog
+      .row
+        .col-12
+          h2.catalog__title Основной каталог
+        .col-12.col-lg-3
+          //- кнопка фильтра
+          .botton-wrapper.d-lg-none.mb-1
+            button.button.button--white.js-filter-button.button--filter Фильтр
+            label.search-block.js-button-search
+              input.search-block__input
+              button.button-search
+          +modal(`Применить фильтр`, true)
+            include filter.pug
+            button.button.js-filter-use.d-lg-none.js-apply-modal Применить
+        .col-12.col-lg-9
+          .catalog__result выбрано 
+            span 30
+            |  товаров
+          .row.js-catalog.mb-4
+            //- каталог
+            .col-6.col-md-3
+              +c_card('Комбез DNK с нашивкой горчица baby', '/img/платье.jpg', '/img/с резинками.jpg', '2300', '2300')
+            .col-6.col-md-3
+              +c_card('Комбез DNK с нашивкой горчица junior', '/img/с резинками.jpg', '/img/юбка.jpg', '2300', '2300', `new`)
+            .col-6.col-md-3
+              +c_card('Комбез DNK с нашивкой горчица man', '/img/юбка.jpg', '/img/платье.jpg', '2300', '2300')
+            .col-6.col-md-3
+              +c_card('Комбез DNK с нашивкой горчица woman', '/img/платье.jpg', '/img/платье.jpg', '2300', '2300')
+          .block
+            button.button.button--white.js-more Показать больше

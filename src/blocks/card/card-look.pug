@@ -1,0 +1,33 @@
+.look
+  .look__preview.row
+    .col-12.col-md-9.ml-auto.mr-auto
+      .row
+        .owl-carousel.owl-carousel-look
+          div
+            .col-12
+              img(src='/img/look.jpg')
+          div
+            .col-12
+              img(src='/img/look_2.jpg')
+              .block.d-none.d-md-block.look__triangle
+                .triangle
+          div
+            .col-12
+              img(src='/img/look_3.jpg')
+          //- div
+          //-   .col-12
+          //-     img(src='/img/look_4.jpg')
+  .block.d-md-none
+    .triangle
+  .row
+    .owl-carousel.owl-carousel-look__product
+      .col-12
+        +c_card('Платье с объемным рукавом серое', '/img/платье.jpg', '/img/с резинками.jpg', '2300', '2300')
+      .col-12
+        +c_card('Фатиновая юбка черная', '/img/юбка.jpg', '/img/платье.jpg', '2300', '2300')
+      .col-12
+        +c_card('Платье с объемным рукавом серое', '/img/платье.jpg', '/img/платье.jpg', '2300', '2300')
+      .col-12
+        +c_card('Платье с резинками нюд', '/img/с резинками.jpg', '/img/юбка.jpg', '2300', '2300')
+      .col-12
+        +c_card('Платье с объемным рукавом серое', '/img/платье.jpg', '/img/платье.jpg', '2300', '2300')

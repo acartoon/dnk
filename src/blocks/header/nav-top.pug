@@ -1,0 +1,11 @@
+-
+  var nav = [
+    {title: "Доставка", link: "delivery.html"},
+    {title: "Наши магазины", link: "shops.html"},
+    {title: "Контакты", link: "contacts.html"}
+  ];
+
+ul.main-nav__list.d-md-none
+  each val in nav
+    li.main-nav__item
+      a(href=val.link).main-nav__link=val.title

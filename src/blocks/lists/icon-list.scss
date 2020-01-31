@@ -1,0 +1,63 @@
+.icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icon-list__item {
+  $size: 25px;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  
+  &:before {
+    top: 5px;
+    left: 0;
+    position: absolute;
+    content: '';
+    background-image: url(/img/icons/sprite.png);
+    width: $size;
+    height: $size;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: 0 0;
+  }
+
+  &--call {
+    &::before {
+      background-position: -22px -102px;
+    }
+  }
+  &--hanger {
+    &::before {
+      background-position: -50px -100px;
+    }
+  }
+
+  &--wallet {
+    &::before {
+      background-position: 0px -128px;
+    }
+  }
+
+  &--arrows {
+    &::before {
+      background-position: 1px -74px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &--exclamation {
+    &::before {
+      background-position: 0px -100px;
+      width: 22px;
+      height: 28px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.order__label {
+  margin: 0;
+  display: block;
+  border: 1px solid grey;
+  padding: 0px 7px;
+  border-radius: 8px;
+}
+
+.order__head {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.order {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:focus {
+    color: inherit;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
+
+.order__offer-list {
+  $padding: 10px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -$padding;
+  margin-right: -$padding;
+
+  & > li {
+    width: 20%;
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+}

@@ -1,0 +1,56 @@
+.accordion {
+
+  &--open {
+
+    .accordion__head {
+      &:before {
+        transform: rotate(180deg);
+        transition: transform .3s;
+      }
+    }
+  }
+
+  &--mob {
+    @media(min-width: 768px) {
+      .accordion__head {
+        padding-left: 0;
+
+        &:before {
+          content: none;
+        }
+      }
+
+      .accordion__body {
+        display: block;
+      }
+    }
+  }
+}
+.accordion__body {
+  display: none;
+
+  .accordion--open & {
+    display: block;
+  }
+
+}
+
+.accordion__head {
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+
+  &:before {
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(/img/icons/arrow-down.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 5px;
+    transition: transform .3s;
+  }
+
+}

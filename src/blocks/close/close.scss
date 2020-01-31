@@ -1,0 +1,54 @@
+// .close {
+//   width: 100%;
+//   height: 100%;
+//   background: transparent;
+//   border: none;
+//   padding: 0;
+//   position: relative;
+// }
+
+.close {
+  position: relative;
+  $size: 25px;
+  width: $size;
+  height: $size;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: none;
+
+  &:before {
+    $size: 100%;
+    content: '';
+    left: 0;
+    top: calc(100%/2);
+    position: absolute;
+    width: $size;
+    height: 2px;
+    background: black;
+    transform: rotate(-45deg);
+    z-index: 101;
+  }
+
+  &:after {
+    $size: 100%;
+    content: '';
+    left: 0;
+    top: calc(100%/2);
+    position: absolute;
+    width: $size;
+    height: 2px;
+    background: black;
+    transform: rotate(45deg);
+    z-index: 101;
+  }
+
+  &--white {
+    &:before, &:after {
+      background: white;
+    }
+  }
+}

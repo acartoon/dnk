@@ -1,0 +1,8 @@
+mixin alert(text, close=false, info=false)
+
+  div(class='alert' class=info? 'alert--info': '')
+    if(close)
+      button.close
+    .alert__inner
+      p.text=text
+      block

@@ -1,0 +1,16 @@
+$z-index: (
+  first: 100,
+  second: 50,
+  third: 30,
+  fourth: -0,
+);
+
+
+@each $level, $index in $z-index {
+
+  .#{$level}-level {
+
+    z-index: $index;
+    // position: relative;
+  }
+}

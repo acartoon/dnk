@@ -1,0 +1,20 @@
+extends ../template.pug
+
+block content
+
+  include title.pug
+  .main-page
+    .container
+      .main-slider.mb-20
+        include slider.pug
+      .main-page__sale.mb-20
+        +title('Наши акции')
+        include sale.pug
+      .main-page__catalog
+        .mb-20
+          +title('Женщины')
+          include woman.pug
+        .mb-20
+          +title('Мужчины')
+          include man.pug
+        

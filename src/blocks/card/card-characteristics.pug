@@ -1,0 +1,27 @@
+include ../parameter/parameter.pug
+include ../accordion/accordion.pug
+
+-
+  var descriptions = [
+      {term: 'Состав', descriptions: 'Описание параметра'},
+      {term: 'Ткань', descriptions: 'Описание параметра'},
+      {term: 'Цвет', descriptions: 'Описание параметра'},
+    ]
+
+
+.row
+  .col-12.col-md-6.mb-2
+    +accordion('Общие параметры', true)
+      //- h3.subtitle 
+      ul.parameter-list
+        each val in descriptions
+          li.parameter-list__item
+            +parameter_2(val.term, val.descriptions)
+  .col-12.col-md-6.mb-2
+   +accordion('Параметры размера', true)
+      //- h3.subtitle Параметры размера
+      ul.parameter-list
+        each val in descriptions
+          li.parameter-list__item
+            +parameter_2(val.term, val.descriptions)
+            

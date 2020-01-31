@@ -1,0 +1,27 @@
+extends template.pug
+
+block content
+  -
+    var personal = [
+      {title: 'Имя/Фамилия', placeholder: 'Ваше имя'},
+      {title: 'Email', placeholder: 'email'},
+      {title: 'Телефон для связи', placeholder: '89188513833'},
+      {title: 'Индекс', placeholder: '395667'},
+      {title: 'Город', placeholder: 'Город'},
+      {title: 'Точный адрес доставки', placeholder: 'адрес'}
+    ];
+
+  .personal-page
+    .container
+      .row
+        .col-3.d-none.d-md-block
+          include user-left-menu.pug
+        .col-12.col-md-9
+          h2.personal-page__title.title Личные данные
+          form.personal-form.personal-page__personal-form
+              each val, index in personal
+                p.personal-form__wrapper
+                  label(for=index).personal-form__label=val.title
+                  input(placeholder=val.placeholder, id=index).personal-form__input.input
+          .personal-page__button
+            a(href='club.html').button Применить изменения

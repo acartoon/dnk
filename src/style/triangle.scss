@@ -1,0 +1,27 @@
+.triangle {
+  position: relative;
+  display: block;
+  width: 100%;
+  width: 100%;
+  height: 3px;
+  background: #3b444b;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  // padding-bottom: 15px;
+
+  &::before {
+    top: 100%;
+    position: absolute;
+    content: '';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 8px solid #3b444b;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-width: 15px;
+    border-right-width: 15px;
+  }
+
+}

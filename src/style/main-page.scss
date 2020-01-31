@@ -1,0 +1,39 @@
+.main-page__title {
+  $size: 70px;
+  $align: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: .7px;
+
+  span {
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    @media(min-width: 992px) {
+      padding-left: $size;
+      padding-right: $size;
+    }
+
+    &:before, &:after {
+        content: '';
+        top: 50%;
+        position: absolute;
+        width: $size;
+        height: 1px;
+        background: black;
+    }
+
+    &:before {
+      left: -$align;
+    }
+
+    &:after {
+      right: -$align;
+    }
+  }
+
+}

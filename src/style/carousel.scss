@@ -1,0 +1,19 @@
+.owl-dot {
+  width: 11px;
+  height: 11px;
+  background: #3b444b !important;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 15px;
+
+  &.active {
+    width: 13px;
+    height: 13px;
+    opacity: .7;
+  }
+}
+
+.owl-dots {
+  text-align: center;
+}

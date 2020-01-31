@@ -1,0 +1,40 @@
+.modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  // border: 1px solid black;
+  z-index: 105;
+  background: white;
+  padding: 15px;
+  overflow: auto;
+  left: 100%;
+  transition: left 0.3s;
+  width: 100%;
+
+  &--mob {
+    @media(min-width: 992px) {
+      position: static;
+      padding: 0;
+    }
+
+    & .modal__close {
+      @media(min-width: 992px) {
+        display: none;
+      }
+    }
+
+    & .modal__head {
+      @media(min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+  
+
+  &--open {
+    left: 0;
+    transition: left 0.3s;
+  }
+}
+

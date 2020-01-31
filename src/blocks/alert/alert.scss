@@ -1,0 +1,28 @@
+.alert {
+  padding: 15px 10px;
+  padding-left: 20px;
+  background: #CCC;
+  color: #000;
+  // text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &--info {
+    position: relative;
+    padding-left: 50px;
+
+    &:before {
+      $size: 30px;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '';
+      width: $size;
+      height: $size;
+      background-image: url('/img/icons/info-black.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+    }
+  }
+}

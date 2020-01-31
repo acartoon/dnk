@@ -1,0 +1,13 @@
+-
+  var catalog = [
+    {title: 'Доставка', link: 'delivery'},
+    {title: 'Наши магазины', link: 'shops'},
+    {title: 'Контакты', link: 'contacts'}
+  ]
+
+.header__top.d-none.d-md-block.top
+  nav.top-nav
+    ul.top-nav-list
+      each val in catalog
+        li.top-nav-list__item
+          a(href=`${val.link}.html`).top-nav-list__link=val.title

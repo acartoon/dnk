@@ -1,0 +1,15 @@
+mixin c_card(title, href, hrefSecond, price_old, price_new, sticker=false)
+
+  a(href='card.html').c-card
+    .c-card__pucture
+      .c-card__pucture-first
+        img(src=href, alt=title)
+      .c-card__pucture-second
+        img(src=hrefSecond, alt=title)
+    h3.c-card__title=title
+    p.c-card__price-wrapper
+      span.c-card__price=price_new + ' ₽'
+      span.c-card__price.c-card__price--old=price_old + ' ₽'
+    if(sticker)
+      .c-card__sticker
+        span=sticker

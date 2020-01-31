@@ -1,0 +1,5 @@
+mixin simple_list(data, text, string = false)
+  ul(class='simple-list' class=string? 'simple-list--string' : '')
+    each val in data
+      li.simple-list__item
+        text=text

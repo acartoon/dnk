@@ -1,0 +1,49 @@
+.parameter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parameter-list__item {
+  margin-bottom: 5px;
+}
+
+.parameter {
+  display: flex;
+  margin: 0;
+  // margin-bottom: 10px;
+}
+
+.parameter__descriptions {
+  margin: 0;
+  margin-left: 5px;
+}
+
+
+// 
+
+.parameter2 {
+  display: flex;
+
+  .parameter__term {
+    width: 40%;
+    position: relative;
+
+    &:before {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      display: block;
+      left: 0;
+      bottom: 5px;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dotted #3b444b;
+    }
+
+    span {
+      background: white;
+      padding-right: 5px;
+    }
+  }
+}
